@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+      background-color: theme('colors.white');
+      border-radius: theme('borderRadius.lg');
+      padding: theme('spacing.6');
+      box-shadow: theme('boxShadow.xl');
+    }
+    /* ... */
+  }
+
+.btn{
+  @apply rounded-full py-2 px-3 text-sm  font-semibold hover:bg-gray-500 cursor-pointer tracking-wider bg-white text-black;
+}
